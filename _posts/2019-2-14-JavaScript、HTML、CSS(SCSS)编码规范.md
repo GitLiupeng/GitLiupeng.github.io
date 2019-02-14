@@ -162,7 +162,47 @@
 
 * 没必要记规则，保存代码直接符合风格规范，出现质量问题跟着提示一个个改就OK了
     
-    
+* 为了方便，总结一下配置：
 
+1. npm init
+
+2. npm i -g prettier eslint stylelint
+
+3. npm i -D prettier eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-standard stylelint-config-standard
+    
+4. File > Setting > Tools > File Watchers > prettier 添加Prettier支持的文件
+
+5. File > Settings > Languages & Frameworks > JavaScript > Prettier 启用Prettier
+
+6. File > Settings > Languages & Frameworks > JavaScript > Code Quality Tools > ESLint 启用ESLint
+
+7. File > Settings > Editor > Inspections > HTML 配置HTML规则
+
+8. File > Settings > Languages & Frameworks > Stylesheets > Stylelint 启用Stylelint
+
+9. File > Settings > Editor > Inspections > CSS > Code quality tools > Stylelint
+
+10. 添加ESLint配置文件.eslintrc
+
+<pre>
+    {
+        "env": {
+            "browser": true,
+            "jquery": true
+        },
+        "extends": ["standard", "plugin:prettier/recommended"],
+        "parserOptions": {
+            "ecmaVersion": 5
+        }
+    }
+</pre>
+
+11. 添加Stylelint配置文件.stylelintrc
+
+<pre>
+    {
+      "extends": "stylelint-config-standard"
+    }
+</pre>
 
 
