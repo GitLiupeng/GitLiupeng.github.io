@@ -4,6 +4,8 @@
 
 ### Prettier介绍
 
+* [Prettier官网](https://prettier.io/)
+
 * Prettier是一个代码格式化工具
 
 * 支持JavaScript、JSX、Angular、Vue、Flow、TypeScript、CSS/Less/SCSS、HTML、JSON、GraphQL、Markdown、YAML
