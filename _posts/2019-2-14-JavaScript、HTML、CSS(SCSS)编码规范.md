@@ -206,25 +206,29 @@
 
 14. 添加ESLint配置文件.eslintrc
 
-<pre>
-    {
-        "env": {
-            "browser": true,
-            "jquery": true
-        },
-        "extends": ["standard", "plugin:prettier/recommended"],
-        "parserOptions": {
-            "ecmaVersion": 5
-        }
-    }
-</pre>
+  <pre>
+      {
+          "env": {
+              "browser": true,
+              "jquery": true
+          },
+          "extends": ["standard", "plugin:prettier/recommended"],
+          "parserOptions": {
+              "ecmaVersion": 5
+          }
+      }
+  </pre>
 
 15. 添加Stylelint配置文件.stylelintrc
 
-<pre>
-    {
-      "extends": "stylelint-config-standard"
-    }
-</pre>
+  <pre>
+      {
+        "extends": "stylelint-config-standard"
+      }
+  </pre>
+  
+* 最后，由于用JS写的项目大部分都是以前的项目，不会用到 ES6+ 新语法，可将WebStorm自带的检测改为ES5，不然用var定义变量都会提示有问题
+
+  * File > Settings > Languages & Frameworks > JavaScript 选择版本为ECMAScript 5.1
 
 
