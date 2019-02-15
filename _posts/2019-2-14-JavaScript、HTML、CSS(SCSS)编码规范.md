@@ -35,7 +35,15 @@
 
 * [Sonar JavaScript规则](https://rules.sonarsource.com/javascript)
 
-* 可使用SonarLint插件，但不能在代码里自动提示
+* 可使用SonarLint插件，WebStorm: File > Setting > Plugins > Browse Repositories 搜索SonarLint，安装完需重启WebStorm
+
+* SonarLint配置：
+
+   * File > Settings > Other Settings > SonarLint General Settings 添加SonarQube servers并启用自动检测
+   
+   * SonarQube URL: http://www.airuima.net:8000
+   
+   * File > Settings > Other Settings > SonarLint Project Settings 绑定server和project并启用配置
 
 ### ESLint
 
@@ -158,33 +166,45 @@
     
 ## 总结
 
-* 公司要用Sonar代码质量管理平台，但是Sonar没有对应自动提示的工具，所以自己配置了一套
+* 公司要用Sonar代码质量管理平台，但是SonarLint只能检测JS，可以配置成线上的规则
 
-* 本地代码按照lint工具改完后，提交到Sonar应该不会再检测出大问题
+* JS本地SonarLint提示的问题和线上一致，同时启用ESLint双重保障，再加上Prettier自动美化代码
 
-* 没必要记规则，保存代码直接符合风格规范，出现质量问题跟着提示一个个改就OK了
+* HTML lint工具只能用命令行，太麻烦，决定弃用，使用WebStorm自带的规则检测
+
+* CSS/SCSS 使用Stylelint检测，使用官方推荐的配置，无需手动添加一条条规则
+
+* 没必要记规则，保存代码直接符合一致的风格规范，出现质量问题跟着提示一个个改就OK了
     
 * 为了方便，总结一下配置：
 
-1. npm init
+1. File > Setting > Plugins 下载安装SonarLint插件
 
-2. npm i -g prettier eslint stylelint
+2. File > Settings > Other Settings > SonarLint General Settings 添加SonarQube servers并启用自动检测
 
-3. npm i -D prettier eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-standard stylelint-config-standard
+3. SonarQube URL: http://www.airuima.net:8000
+   
+4. File > Settings > Other Settings > SonarLint Project Settings 绑定server和project并启用配置
+
+5. npm init
+
+6. npm i -g prettier eslint stylelint
+
+7. npm i -D prettier eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-standard stylelint-config-standard
     
-4. File > Setting > Tools > File Watchers > prettier 添加Prettier支持的文件
+8. File > Setting > Tools > File Watchers > prettier 添加Prettier支持的文件
 
-5. File > Settings > Languages & Frameworks > JavaScript > Prettier 启用Prettier
+9. File > Settings > Languages & Frameworks > JavaScript > Prettier 启用Prettier
 
-6. File > Settings > Languages & Frameworks > JavaScript > Code Quality Tools > ESLint 启用ESLint
+10. File > Settings > Languages & Frameworks > JavaScript > Code Quality Tools > ESLint 启用ESLint
 
-7. File > Settings > Editor > Inspections > HTML 配置HTML规则
+11. File > Settings > Editor > Inspections > HTML 配置HTML规则
 
-8. File > Settings > Languages & Frameworks > Stylesheets > Stylelint 启用Stylelint
+12. File > Settings > Languages & Frameworks > Stylesheets > Stylelint 启用Stylelint
 
-9. File > Settings > Editor > Inspections > CSS > Code quality tools > Stylelint
+13. File > Settings > Editor > Inspections > CSS > Code quality tools > Stylelint
 
-10. 添加ESLint配置文件.eslintrc
+14. 添加ESLint配置文件.eslintrc
 
 <pre>
     {
@@ -199,7 +219,7 @@
     }
 </pre>
 
-11. 添加Stylelint配置文件.stylelintrc
+15. 添加Stylelint配置文件.stylelintrc
 
 <pre>
     {
