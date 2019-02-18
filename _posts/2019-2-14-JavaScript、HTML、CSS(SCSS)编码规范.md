@@ -61,6 +61,8 @@
 
 * 启用ESLint：File > Settings > Languages & Frameworks > JavaScript > Code Quality Tools > ESLint
 
+* File > Settings > Editor > Inspections > JavaScript > Code quality tools > ESLint
+
 * ESLint与Prettier结合：npm i -D eslint eslint-config-prettier eslint-plugin-prettier
 
 * SonarJS规则配置：
@@ -200,13 +202,15 @@
 
 10. File > Settings > Languages & Frameworks > JavaScript > Code Quality Tools > ESLint 启用ESLint
 
-11. File > Settings > Editor > Inspections > HTML 配置HTML规则
+11. File > Settings > Editor > Inspections > JavaScript > Code quality tools > ESLint
 
-12. File > Settings > Languages & Frameworks > Stylesheets > Stylelint 启用Stylelint
+12. File > Settings > Editor > Inspections > HTML 配置HTML规则
 
-13. File > Settings > Editor > Inspections > CSS > Code quality tools > Stylelint
+13. File > Settings > Languages & Frameworks > Stylesheets > Stylelint 启用Stylelint
 
-14. 添加ESLint配置文件.eslintrc
+14. File > Settings > Editor > Inspections > CSS > Code quality tools > Stylelint
+
+15. 添加ESLint配置文件.eslintrc
 
   <pre>
       {
@@ -221,7 +225,7 @@
       }
   </pre>
 
-15. 添加Stylelint配置文件.stylelintrc
+16. 添加Stylelint配置文件.stylelintrc
 
   <pre>
       {
