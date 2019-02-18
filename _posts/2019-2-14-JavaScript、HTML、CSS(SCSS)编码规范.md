@@ -140,6 +140,8 @@
 
 * [StyleLint规则](https://stylelint.io/user-guide/rules/)
 
+* 可配置成推荐的standard规则，[stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
+
 * 可结合WebStorm使用，自动提示
 
 * StyleLint安装：npm i -g stylelint 
