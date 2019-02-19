@@ -24,9 +24,9 @@
 
 * 文件保存时自动格式化代码
 
-* npm i -g prettier
+* npm i -D prettier
 
-* 配置全局路径：File > Settings > Languages & Frameworks > JavaScript > Prettier
+* 配置路径：File > Settings > Languages & Frameworks > JavaScript > Prettier
 
 
 ## JavaScript规范
