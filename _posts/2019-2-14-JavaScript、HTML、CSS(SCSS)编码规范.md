@@ -57,13 +57,13 @@
 
 ### ESLint安装
 
-* 全局安装：npm i -g eslint
+* npm i -D eslint eslint-plugin-import eslint-plugin-node eslint-plugin-promise
 
 * 启用ESLint：File > Settings > Languages & Frameworks > JavaScript > Code Quality Tools > ESLint
 
 * File > Settings > Editor > Inspections > JavaScript > Code quality tools > ESLint
 
-* ESLint与Prettier结合：npm i -D eslint eslint-config-prettier eslint-plugin-prettier
+* ESLint与Prettier结合：npm i -D eslint-config-prettier eslint-plugin-prettier
 
 * SonarJS规则配置：
 
@@ -89,7 +89,7 @@
 
 * StandardJS规则配置(推荐)：
 
-    * npm i -D eslint-plugin-standard
+    * npm i -D eslint-plugin-standard eslint-config-standard
     
     * .eslintrc文件内容：
     
@@ -146,7 +146,7 @@
 
 * 可结合WebStorm使用，自动提示
 
-* StyleLint安装：npm i -g stylelint 
+* StyleLint安装：npm i -D stylelint 
 
 * WebStorm配置:
 
@@ -192,9 +192,7 @@
 
 5. npm init
 
-6. npm i -g prettier eslint stylelint
-
-7. npm i -D prettier eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-standard stylelint-config-standard
+7. npm i -D prettier eslint stylelint eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-config-prettier eslint-plugin-prettier eslint-plugin-standard eslint-config-standard stylelint-config-standard
     
 8. File > Setting > Tools > File Watchers > prettier 添加Prettier支持的文件
 
