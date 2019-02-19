@@ -35,7 +35,7 @@
 
 * [Sonar JavaScript规则](https://rules.sonarsource.com/javascript)
 
-* 可使用SonarLint插件，WebStorm: File > Setting > Plugins > Browse Repositories 搜索SonarLint，安装完需重启WebStorm
+* 可使用SonarLint插件，WebStorm: File > Setting > Plugins 搜索SonarLint，安装完需重启WebStorm
 
 * SonarLint配置：
 
