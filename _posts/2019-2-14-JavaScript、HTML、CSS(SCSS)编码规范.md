@@ -192,23 +192,23 @@
 
 5. npm init
 
-7. npm i -D prettier eslint stylelint eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-config-prettier eslint-plugin-prettier eslint-plugin-standard eslint-config-standard stylelint-config-standard
+6. npm i -D prettier eslint stylelint eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-config-prettier eslint-plugin-prettier eslint-plugin-standard eslint-config-standard stylelint-config-standard
     
-8. File > Setting > Tools > File Watchers > prettier 添加Prettier支持的文件
+7. File > Setting > Tools > File Watchers > prettier 添加Prettier支持的文件
 
-9. File > Settings > Languages & Frameworks > JavaScript > Prettier 启用Prettier
+8. File > Settings > Languages & Frameworks > JavaScript > Prettier 启用Prettier
 
-10. File > Settings > Languages & Frameworks > JavaScript > Code Quality Tools > ESLint 启用ESLint
+9. File > Settings > Languages & Frameworks > JavaScript > Code Quality Tools > ESLint 启用ESLint
 
-11. File > Settings > Editor > Inspections > JavaScript > Code quality tools > ESLint
+10. File > Settings > Editor > Inspections > JavaScript > Code quality tools > ESLint
 
-12. File > Settings > Editor > Inspections > HTML 配置HTML规则
+11. File > Settings > Editor > Inspections > HTML 配置HTML规则
 
-13. File > Settings > Languages & Frameworks > Stylesheets > Stylelint 启用Stylelint
+12. File > Settings > Languages & Frameworks > Stylesheets > Stylelint 启用Stylelint
 
-14. File > Settings > Editor > Inspections > CSS > Code quality tools > Stylelint
+13. File > Settings > Editor > Inspections > CSS > Code quality tools > Stylelint
 
-15. 添加ESLint配置文件.eslintrc
+14. 添加ESLint配置文件.eslintrc
 
   <pre>
       {
@@ -223,7 +223,7 @@
       }
   </pre>
 
-16. 添加Stylelint配置文件.stylelintrc
+15. 添加Stylelint配置文件.stylelintrc
 
   <pre>
       {
